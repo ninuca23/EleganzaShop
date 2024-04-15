@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+section {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .card {
+    height: 300px;
+    padding: 5px;
+    // background-color: rgb(196, 196, 196);
+    background-color: rgb(218, 232, 236);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 1s;
+    font-family: "Noto Sans Georgian", sans-serif;
+    color: black;
+    font-size: 13px;
+    border: 2px solid lightblue;
+    .price {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+  }
+  img {
+    width: 230px;
+    height: 200px;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+    box-shadow: rgb(240, 237, 237) 0px 0px 0px 2px inset,
+      rgba(255, 255, 255, 0.11) 10px -10px 0px -3px,
+      rgba(92, 92, 83, 0.151) 10px -10px;
+  }
+}
